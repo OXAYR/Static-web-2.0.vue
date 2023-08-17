@@ -7,38 +7,19 @@
       Learn from the experts on the cutting-edge of deception at the most
       sinister companies.
     </p>
-    <div class="mt-24 flex flex-col-2">
-      <div class="flex-col text-left w-2/4">
-        <li>
-          <span class="text-sm text-blue-600">Opening Day </span>
-          <p class="text-2xl font-medium py-2 text-blue-950">April 4</p>
-        </li>
-        <li>
-          <span class="text-sm text-gray-600">Speakers & Workshop </span>
-          <p class="text-2xl font-medium px-5 py-2 text-blue-950">April 5</p>
-        </li>
-        <li>
-          <span class="text-sm text-gray-600">Interview</span>
-          <p class="text-2xl font-medium px-5 py-2 text-blue-950">April 6</p>
-        </li>
-      </div>
-      <div class="grid grid-cols-3 list-none">
-        <li
-          v-for="x in 9"
-          :key="x"
-          class="p-4 bg-white card rounded-lg flex flex-col m-4 justify-between"
-        >
-          <div>
-            <img src="../assets/steven-mchail.png" alt="productimage" />
-          </div>
-          <div class="p-2">
-            <h2 class="text-lg font-semibold">Steven McHail</h2>
-            <p class="text-gray-500 text-sm line-clamp-2">
-              Designer at Globex Corporation
-            </p>
-          </div>
-        </li>
-      </div>
+    <List />
+    <p class="text-5xl text-left w-3/4 flex-wrap text-blue-600 mt-24">
+      Our three day schedule is jam-packed with brilliant, creative, evil
+      geniuses.
+    </p>
+    <p class="text-left text-xl w-3/4 flex-wrap">
+      The worst people in our industry giving the best talks you’ve ever seen.
+      Nothing will be recorded and every attendee has to sign an NDA to watch
+      the talks.
+    </p>
+
+    <div class="grid grid-cols-3">
+      <div v-for="x in 3" :key="x">April4</div>
     </div>
   </div>
 </template>
@@ -46,11 +27,13 @@
 <script>
 import Header from "./Header.vue";
 import Banner from "./Banner.vue";
+import List from "./List.vue";
 export default {
   name: "Home",
   components: {
     Header,
     Banner,
+    List,
   },
 };
 </script>
