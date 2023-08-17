@@ -17,10 +17,20 @@
       Nothing will be recorded and every attendee has to sign an NDA to watch
       the talks.
     </p>
-
-    <div class="grid grid-cols-3">
-      <div v-for="x in 3" :key="x">April4</div>
+    <LowerList />
+    <div class="text-5xl text-blue-600 p-32">
+      <p>Current sponsorships for our workshops and speakers.</p>
+      <div class="grid grid-cols-3 w-full m-20">
+        <img class="m-5" src="../assets/transistor.a1e38d49.svg" />
+        <img class="m-5" src="../assets/laravel.6faebf7c.svg" />
+        <img class="m-5" src="../assets/mirage.e12f40ad.svg" />
+        <img class="m-5" src="../assets/statickit.2e06fcea.svg" />
+        <img class="m-5" src="../assets/transistor.a1e38d49.svg" />
+        <img class="m-5" src="../assets/tuple.2f54ed03.svg" />
+      </div>
     </div>
+
+    <footer></footer>
   </div>
 </template>
 
@@ -28,12 +38,14 @@
 import Header from "./Header.vue";
 import Banner from "./Banner.vue";
 import List from "./List.vue";
+import LowerList from "./LowerList.vue";
 export default {
   name: "Home",
   components: {
     Header,
     Banner,
     List,
+    LowerList,
   },
 };
 </script>

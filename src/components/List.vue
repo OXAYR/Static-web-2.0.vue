@@ -18,10 +18,14 @@
       <li
         v-for="x in 9"
         :key="x"
-        class="p-4 bg-white card rounded-lg flex flex-col m-4 justify-between"
+        class="bg-white rounded-lg flex flex-col m-4 justify-between border border-blue-500"
       >
         <div>
-          <img src="../assets/steven-mchail.png" alt="productimage" />
+          <img
+            class="rounded"
+            src="../assets/steven-mchail.png"
+            alt="productimage"
+          />
         </div>
         <div class="p-2">
           <h2 class="text-lg font-semibold">Steven McHail</h2>

@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col flex-wrap items-center p-32 gap-10">
     <div class="w-3/4">
-      <p class="font-bold w- text-6xl text-blue-600 w-full text-left">
+      <p class="font-bold text-6xl text-blue-600 w-full text-left">
         A design conference for the dark side.
       </p>
     </div>
