@@ -1,5 +1,5 @@
 <template>
-  <div class="p-10 flex justify-between">
+  <div class="flex justify-between pt-10">
     <h1 class="font-bold text-lg">DeptiConf</h1>
 
     <p class="text-blue-600">04-06 of April, 2022 Los Angeles, CA</p>

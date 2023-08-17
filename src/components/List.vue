@@ -1,6 +1,6 @@
 <template>
   <div class="mt-24 flex flex-col-2">
-    <div class="flex-col text-left w-2/4 mt-5">
+    <div class="text-left w-2/4 mt-5">
       <li
         v-for="(item, index) in listItems"
         :key="index"
@@ -60,7 +60,7 @@ export default {
         { label: "Speakers & Workshop", date: "April 5" },
         { label: "Interview", date: "April 6" },
       ],
-      selectedItem: null,
+      selectedItem: 0,
     };
   },
   methods: {

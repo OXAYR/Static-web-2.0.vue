@@ -21,12 +21,10 @@
             <p class="text-left mb-5 font-medium text-blue-950">
               Sign up to our newsletter ↓
             </p>
-            <div
-              class="border border-gray-400 bg-white rounded-2xl w-3/4 justify-between"
-            >
+            <div class="bg-white rounded-2xl w-3/4 justify-between">
               <input
                 type="text"
-                class="rounded-2xl py-6 px-20"
+                class="rounded-2xl py-6 w-80 outline-none"
                 placeholder="Email Address"
               />
               <button class="bg-blue-600 px-5 py-4 rounded-2xl text-white">

@@ -14,13 +14,13 @@
       </div>
     </div>
 
-    <p class="text-4xl text-left text-blue-600 px-20 pt-20">Speakers</p>
+    <p class="text-5xl text-left text-blue-600 px-20 pt-20">Speakers</p>
     <p class="text-left text-xl px-20">
       Learn from the experts on the cutting-edge of deception at the most
       sinister companies.
     </p>
     <List class="px-20" />
-    <p class="text-4xl text-left w-3/4 flex-wrap text-blue-600 mt-24 px-20">
+    <p class="text-5xl text-left w-3/4 flex-wrap text-blue-600 mt-24 px-20">
       Our three day schedule is jam-packed with brilliant, creative, evil
       geniuses.
     </p>
