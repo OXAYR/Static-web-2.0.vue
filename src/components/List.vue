@@ -1,17 +1,29 @@
 <template>
   <div class="mt-24 flex flex-col-2">
     <div class="flex-col text-left w-2/4 mt-5">
-      <li class="my-5">
-        <span class="text-sm text-blue-600">Opening Day </span>
-        <p class="text-2xl font-medium px-5 py-2 text-blue-950">April 4</p>
-      </li>
-      <li class="my-5">
-        <span class="text-sm text-gray-600">Speakers & Workshop </span>
-        <p class="text-2xl font-medium px-5 py-2 text-blue-950">April 5</p>
-      </li>
-      <li class="my-5">
-        <span class="text-sm text-gray-600">Interview</span>
-        <p class="text-2xl font-medium px-5 py-2 text-blue-950">April 6</p>
+      <li
+        v-for="(item, index) in listItems"
+        :key="index"
+        @click="selectItem(index)"
+        class="cursor-pointer transition-colors"
+      >
+        <span
+          class="text-sm"
+          :class="{
+            'text-blue-600': selectedItem === index,
+            'text-gray-600': selectedItem !== index,
+          }"
+          >{{ item.label }}</span
+        >
+        <p
+          class="text-2xl font-medium px-5 py-2"
+          :class="{
+            'text-blue-950': selectedItem === index,
+            'text-gray-600': selectedItem !== index,
+          }"
+        >
+          {{ item.date }}
+        </p>
       </li>
     </div>
     <div class="grid grid-cols-3 list-none cursor-pointer">
@@ -37,8 +49,30 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: "List",
+  data() {
+    return {
+      listItems: [
+        { label: "Opening Day", date: "April 4" },
+        { label: "Speakers & Workshop", date: "April 5" },
+        { label: "Interview", date: "April 6" },
+      ],
+      selectedItem: null,
+    };
+  },
+  methods: {
+    selectItem(index) {
+      this.selectedItem = index;
+    },
+  },
 };
 </script>
+
+<style scoped>
+li::marker {
+  background-color: rgb(37, 99, 235);
+}
+</style>
