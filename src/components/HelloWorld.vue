@@ -19,7 +19,7 @@
         </li>
         <li>
           <span class="text-sm text-gray-600">Interview</span>
-          <p class="text-2xl fon-medium px-5 py-2 text-blue-950">April 6</p>
+          <p class="text-2xl font-medium px-5 py-2 text-blue-950">April 6</p>
         </li>
       </div>
       <div class="grid grid-cols-3 list-none">
