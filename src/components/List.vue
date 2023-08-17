@@ -1,15 +1,15 @@
 <template>
   <div class="mt-24 flex flex-col-2">
     <div class="flex-col text-left w-2/4 mt-5">
-      <li>
+      <li class="my-5">
         <span class="text-sm text-blue-600">Opening Day </span>
         <p class="text-2xl font-medium px-5 py-2 text-blue-950">April 4</p>
       </li>
-      <li>
+      <li class="my-5">
         <span class="text-sm text-gray-600">Speakers & Workshop </span>
         <p class="text-2xl font-medium px-5 py-2 text-blue-950">April 5</p>
       </li>
-      <li>
+      <li class="my-5">
         <span class="text-sm text-gray-600">Interview</span>
         <p class="text-2xl font-medium px-5 py-2 text-blue-950">April 6</p>
       </li>
