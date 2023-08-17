@@ -17,6 +17,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    filter: blur(10px); 
+    inset:0;
+    
+    filter: blur(30px); 
     z-index: -1; 
   }

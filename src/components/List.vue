@@ -14,7 +14,7 @@
         <p class="text-2xl font-medium px-5 py-2 text-blue-950">April 6</p>
       </li>
     </div>
-    <div class="grid grid-cols-3 list-none">
+    <div class="grid grid-cols-3 list-none cursor-pointer">
       <li
         v-for="x in 9"
         :key="x"
@@ -22,7 +22,7 @@
       >
         <div>
           <img
-            class="rounded"
+            class="rounded hover:scale-110"
             src="../assets/steven-mchail.png"
             alt="productimage"
           />
